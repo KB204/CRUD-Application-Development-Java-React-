@@ -15,12 +15,16 @@ import java.util.List;
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
+    @Column(nullable = false)
     private String firstName;
+    @Column(nullable = false)
     private String lastName;
+    @Column(nullable = false,unique = true)
     private String email;
+    @Column(nullable = false)
     private String phone;
     private String address;
     @OneToMany(mappedBy = "customer",cascade = CascadeType.ALL,orphanRemoval = true)
-    private List<Order> orders = new ArrayList<>();
+    private List<Invoice> invoices = new ArrayList<>();
 }
