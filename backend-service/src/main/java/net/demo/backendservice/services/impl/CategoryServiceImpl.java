@@ -3,6 +3,7 @@ package net.demo.backendservice.services.impl;
 import net.demo.backendservice.dao.CategoryRepository;
 import net.demo.backendservice.dtos.category.CategoryRequest;
 import net.demo.backendservice.dtos.category.CategoryResponse;
+import net.demo.backendservice.dtos.category.CategoryResponseDto;
 import net.demo.backendservice.entities.Category;
 import net.demo.backendservice.exceptions.ResourceAlreadyExists;
 import net.demo.backendservice.exceptions.ResourceNotFoundException;
@@ -14,6 +15,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.*;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -52,6 +54,15 @@ public class CategoryServiceImpl implements CategoryService {
                 .orElseThrow(() -> new ResourceNotFoundException(format("Category with id %s not found", id)));
 
         return categoryMapper.categoryToCategoryResponse(category);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public CategoryResponseDto categoryDetails(Integer id) {
+        var category = categoryRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException(format("Category with id %s not found", id)));
+
+        return categoryMapper.categoryToCategoryResponseDto(category);
     }
 
     @Override
