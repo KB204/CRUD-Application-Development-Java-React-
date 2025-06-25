@@ -2,6 +2,7 @@ package net.demo.backendservice.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import net.demo.backendservice.enums.InvoiceStatus;
@@ -13,6 +14,7 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Builder
 @Entity
 public class Invoice {
     @Id
