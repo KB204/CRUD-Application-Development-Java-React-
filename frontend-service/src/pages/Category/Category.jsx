@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import Loading from "../../components/Loading/Loading";
 import { useParams, useNavigate } from "react-router-dom";
-import "./CategoryUpdate.css";
+import "../Update.css";
 import { useCategoryDetails, useCategoryMutations } from "../../hooks/useCategories";
 
 export default function Category() {

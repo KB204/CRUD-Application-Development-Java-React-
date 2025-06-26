@@ -41,12 +41,6 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            <Link to="/users" className="link">
-              <li className="sidebarListItem">
-                <PermIdentity className="sidebarIcon" />
-                Users
-              </li>
-            </Link>
             <Link to="/categories" className="link">
               <li className="sidebarListItem">
                 <Storefront className="sidebarIcon" />

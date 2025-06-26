@@ -2,7 +2,7 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import "./NewCategory.css";
-import { useCategoryMutations } from "../../hooks/useCategories";
+import { useCategoryMutations } from "../../../hooks/useCategories.js";
 
 export default function NewCategory() {
     const navigate = useNavigate();

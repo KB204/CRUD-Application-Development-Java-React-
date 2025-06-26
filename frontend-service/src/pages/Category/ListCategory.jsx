@@ -4,7 +4,7 @@ import EditIcon from '@material-ui/icons/Edit';
 import Swal from 'sweetalert2';
 import { Link } from "react-router-dom";
 import Loading from "../../components/Loading/Loading";
-import "./ListCategory.css";
+import "../List.css";
 import { useCategories, useCategoryMutations } from "../../hooks/useCategories";
 
 export default function ListCategory() {
@@ -88,7 +88,7 @@ export default function ListCategory() {
     const displayError = error || deleteError;
 
     return (
-        <div className="userList" style={{ height: '550px', width: '100%' }}>
+        <div className="userList" style={{ height: '550px', width: '350%' }}>
         {displayError && (
                 <div className="error-message" style={{ color: 'red', marginBottom: '10px' }}>
                     {displayError}
