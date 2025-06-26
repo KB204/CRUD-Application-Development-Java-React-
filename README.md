@@ -21,6 +21,7 @@ This project provides a user-friendly system for managing core business entities
 Features include:
 
 - CRUD operations with dynamic filter and pagination
+- Unit tests using Junit5
 - Error handling and validation (both frontend & backend)  
 - Modern UI
 
