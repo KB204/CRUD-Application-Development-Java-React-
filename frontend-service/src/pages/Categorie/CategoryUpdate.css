@@ -1,0 +1,69 @@
+.updateUser {
+    flex: 4;
+    margin-left: 220px;
+}
+
+.updateUserForm {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.updateUserItem {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.updateUserItem > label {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(151, 150, 150);
+}
+
+.updateUserItem > input {
+        height: auto;
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+}
+
+
+.updateUserItem > select {
+        height: auto;
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+}
+
+
+.newUserSelect {
+    height: auto;
+    border-radius: 5px;
+}
+
+.updateUserButton {
+    width: 150px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+.userAddButton {
+    width: 80px;
+    border: none;
+    padding: 5px;
+    background-color: teal;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}

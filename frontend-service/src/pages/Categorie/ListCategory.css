@@ -1,0 +1,52 @@
+.userList {
+    flex: 4;
+    margin-left: 220px;
+    margin-top: 80px;
+}
+
+.userListUser {
+    display: flex;
+    align-items: center;
+}
+
+.userAddButton {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.userAddButton:hover {
+        background-color: #3f51b5;
+}
+
+.userListImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.userListEdit {
+    color: yellow;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.userListInfo {
+    color: darkblue;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.userListDelete {
+    color: red;
+    cursor: pointer;
+}
