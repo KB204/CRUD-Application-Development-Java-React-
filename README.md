@@ -21,8 +21,15 @@ This project provides a user-friendly system for managing core business entities
 Features include:
 
 - CRUD operations with dynamic filter and pagination
+  
 - Unit tests using Junit5
-- Error handling and validation (both frontend & backend)  
+  
+- Error handling and validation (both frontend & backend)
+  
+- 📚 REST API documentation is available at:
+   http://localhost:8080/api-docs
+   http://localhost:8080/docs-ui
+  
 - Modern UI
 
 ---
